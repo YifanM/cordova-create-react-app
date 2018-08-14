@@ -52,7 +52,7 @@ if(window.cordova) {
 }
 ```
 
-And add `<script type="text/javascript" src="cordova.js"></script>` to index.html. You may also want to add
+And add `<script type="text/javascript" src="cordova.js"></script>` to `index.html`. Place this in the `head` tag to make sure that `cordova.js` loads before the app does. You may also want to add
 ```
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 <meta name="format-detection" content="telephone=no">
@@ -80,7 +80,7 @@ To test the app run:
 
 `cordova emulate ios`
 
-To test on a connected devie run:
+To test on a connected device run:
 
 `cordova run android`
 
